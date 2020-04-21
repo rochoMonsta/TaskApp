@@ -36,5 +36,13 @@ namespace Test
         {
             Navigation.PushAsync(new AddNewMission());
         }
+
+        private void kanban_DragEnd(object sender, KanbanDragEndEventArgs e)
+        {
+            int index = Convert.ToInt32((e.Data as KanbanModel).ID - 1);
+            ViewModel.CardsCopy[index].Category = e.TargetCategory;
+            //DBSaverLoader dBSaverLoader = new DBSaverLoader();
+            //dBSaverLoader.SAVE_USER(ViewModel.CardsCopy);
+        }
     }
 }

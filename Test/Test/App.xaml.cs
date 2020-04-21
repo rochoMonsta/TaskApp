@@ -41,6 +41,8 @@ namespace Test
 
         protected override void OnSleep()
         {
+            DBSaverLoader dBSaverLoader = new DBSaverLoader();
+            dBSaverLoader.SAVE_USER(ViewModel.CardsCopy);
         }
 
         protected override void OnResume()

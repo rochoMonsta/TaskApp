@@ -22,6 +22,19 @@
                         <x:String>Жовтий</x:String>
                     </Picker.Items>
                 </Picker>
+                <Label Text="Категорія завдання" TextColor="Gray" FontSize="24" Margin="10, 0, 10, 10"/>
+                <Picker x:Name="CategoryPicker" Margin="10, 0, 10, 10">
+                    <Picker.Items>
+                        <x:String>Завдання</x:String>
+                        <x:String>Покупки</x:String>
+                        <x:String>Хоббі</x:String>
+                        <x:String>Здоров'я</x:String>
+                        <x:String>Ігри</x:String>
+                        <x:String>Навчання</x:String>
+                        <x:String>Стосунки</x:String>
+                        <x:String>Спорт</x:String>
+                    </Picker.Items>
+                </Picker>
                 <Label Text="Теги для завдання" TextColor="Gray" FontSize="24" Margin="10, 0, 10, 10"/>
                 <Entry x:Name="MissionTagsEntry" Placeholder="" Margin="10, 0, 10, 10"/>
                 <Button Text="Додати вправу" Clicked="Button_Clicked" HorizontalOptions="Center" BackgroundColor="#2c7cd1" TextColor="White"/>

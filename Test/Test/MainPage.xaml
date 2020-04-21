@@ -20,7 +20,8 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
 
-        <kanban:SfKanban x:Name="kanban" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}">
+        <kanban:SfKanban x:Name="kanban" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}"
+                         DragEnd="kanban_DragEnd" CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter="1">
 
             <kanban:SfKanban.Columns>
 

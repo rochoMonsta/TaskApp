@@ -608,3 +608,10 @@ C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\android\src\crc645db69df7e
 C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\android\src\crc645db69df7eca7ebd6\TouchListener.java
 C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\res\drawable\todo.png
 C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\res\drawable\add.png
+C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\res\drawable\cart.png
+C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\res\drawable\sport1.png
+C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\res\drawable\health1.png
+C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\res\drawable\games1.png
+C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\res\drawable\knowledge1.png
+C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\res\drawable\love1.png
+C:\Users\rocho\Desktop\Test\Test.Android\obj\Debug\90\res\drawable\hobby1.png

@@ -13,9 +13,11 @@ namespace Test
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddNewMission : ContentPage
     {
+        static int StaticID;
         public AddNewMission()
         {
             InitializeComponent();
+            StaticID = ViewModel.CardsCopy.Count;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -24,18 +26,44 @@ namespace Test
             {
                 ViewModel.CardsCopy.Add(new KanbanModel()
                 {
-                    //ID = ViewModel.CardsCopy[ViewModel.CardsCopy.Count - 1].ID + 1,
+                    ID = StaticID + 1,
                     Title = MissionEntry.Text,
                     Category = "Виконати",
                     Description = DetailMissionEntry.Text,
-                    ColorKey = ColorPicker.SelectedItem.ToString(),
+                    ColorKey = GetColor(),
                     Tags = MissionTagsEntry.Text.Split().ToArray(),
-                    ImageURL = "todo.png"
+                    ImageURL = GetPicture()
                 });
             }
-            DBSaverLoader dBSaverLoader = new DBSaverLoader();
-            dBSaverLoader.SAVE_USER(ViewModel.CardsCopy);
+            //DBSaverLoader dBSaverLoader = new DBSaverLoader();
+            //dBSaverLoader.SAVE_USER(ViewModel.CardsCopy);
             Navigation.PopAsync();
+        }
+        private string GetColor()
+        {
+            switch(ColorPicker.SelectedIndex)
+            {
+                case 0: return "Green";
+                case 1: return "Red";
+                case 2: return "Blue";
+                case 3: return "Yellow";
+            }
+            return "Aqua";
+        }
+        private string GetPicture()
+        {
+            switch(CategoryPicker.SelectedIndex)
+            {
+                case 0: return "todo.png";
+                case 1: return "cart.png";
+                case 2: return "hobby1.png";
+                case 3: return "health1.png";
+                case 4: return "games1.png";
+                case 5: return "knowledge1.png";
+                case 6: return "love1.png";
+                case 7: return "sport1.png";
+            }
+            return "todo.png";
         }
     }
 }
