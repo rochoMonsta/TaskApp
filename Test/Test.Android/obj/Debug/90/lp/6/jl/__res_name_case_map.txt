@@ -1,0 +1,10 @@
+drawable/errorimage.png;drawable/errorimage.png
+drawable/kanban_collapse.png;drawable/kanban_collapse.png
+drawable/ripple.xml;drawable/ripple.xml
+drawable/roundedcorner.xml;drawable/roundedcorner.xml
+layout/CardViewHolder.axml;layout/cardviewholder.xml
+layout/DefaultCardView.axml;layout/defaultcardview.xml
+layout-ldrtl/DefaultCardView.axml;layout-ldrtl/defaultcardview.xml
+drawable/defaultphoto.png;drawable/defaultphoto.png
+values/Strings.xml;values/strings.xml
+drawable/kanban_arrow_dark.png;drawable/kanban_arrow_dark.png

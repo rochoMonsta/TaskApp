@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "W8gAP6lO3v8b5mZftlBaaTnJh6l8G/GAqsOgL/wVMiWGRA/vixm9pq9yY37ughiaVoCZztnWXL47jl+slEjoBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rocho\\Desktop\\Test\\Test\\Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rocho\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\syncfusion.licensing\\18.1.0.44\\syncfusion.licensing.18.1.0.44.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\syncfusion.xamarin.buttons\\18.1.0.44\\syncfusion.xamarin.buttons.18.1.0.44.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\syncfusion.xamarin.core\\18.1.0.44\\syncfusion.xamarin.core.18.1.0.44.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\syncfusion.xamarin.sfcombobox\\18.1.0.44\\syncfusion.xamarin.sfcombobox.18.1.0.44.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\syncfusion.xamarin.sfgauge\\18.1.0.44\\syncfusion.xamarin.sfgauge.18.1.0.44.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\syncfusion.xamarin.sfkanban\\18.1.0.44\\syncfusion.xamarin.sfkanban.18.1.0.44.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\syncfusion.xamarin.sfprogressbar\\18.1.0.44\\syncfusion.xamarin.sfprogressbar.18.1.0.44.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\syncfusion.xamarin.sfradialmenu\\18.1.0.44\\syncfusion.xamarin.sfradialmenu.18.1.0.44.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\xamarin.essentials\\1.5.2\\xamarin.essentials.1.5.2.nupkg.sha512",
+    "C:\\Users\\rocho\\.nuget\\packages\\xamarin.forms\\4.5.0.617\\xamarin.forms.4.5.0.617.nupkg.sha512"
+  ],
+  "logs": []
+}

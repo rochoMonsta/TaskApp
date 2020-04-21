@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
+             xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             xmlns:kanban="clr-namespace:Syncfusion.SfKanban.XForms;assembly=Syncfusion.SfKanban.XForms" xmlns:local="clr-namespace:Test"
+             mc:Ignorable="d"
+             x:Class="Test.MainPage"
+             Title="Завдання">
+
+    <ContentPage.BindingContext>
+        <local:ViewModel>
+        </local:ViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="add.png" Text="Додати завдання" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+
+        <kanban:SfKanban x:Name="kanban" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}">
+
+            <kanban:SfKanban.Columns>
+
+                <kanban:KanbanColumn x:Name="openColumn" Title="Виконати" MinimumLimit="1" MaximumLimit="3">
+                    <kanban:KanbanColumn.ErrorbarSettings>
+                        <kanban:KanbanErrorBarSettings Color="Green" MinValidationColor="Gray" MaxValidationColor="Red" Height="4"/>
+                    </kanban:KanbanColumn.ErrorbarSettings>
+                </kanban:KanbanColumn>
+
+                <kanban:KanbanColumn x:Name="progressColumn" Title="Виконується" MinimumLimit="1" MaximumLimit="3">
+                    <kanban:KanbanColumn.ErrorbarSettings>
+                        <kanban:KanbanErrorBarSettings Color="Green" MinValidationColor="Gray" MaxValidationColor="Red" Height="4"/>
+                    </kanban:KanbanColumn.ErrorbarSettings>
+                </kanban:KanbanColumn>
+
+                <kanban:KanbanColumn x:Name="codeColumn" Title="Виконано" MinimumLimit="1" MaximumLimit="3">
+                    <kanban:KanbanColumn.ErrorbarSettings>
+                        <kanban:KanbanErrorBarSettings Color="Green" MinValidationColor="Gray" MaxValidationColor="Red" Height="4"/>
+                    </kanban:KanbanColumn.ErrorbarSettings>
+                </kanban:KanbanColumn>
+
+                <kanban:KanbanColumn x:Name="doneColumn" Title="В плані виконання" MinimumLimit="1" MaximumLimit="3">
+                    <kanban:KanbanColumn.ErrorbarSettings>
+                        <kanban:KanbanErrorBarSettings Color="Green" MinValidationColor="Gray" MaxValidationColor="Red" Height="4"/>
+                    </kanban:KanbanColumn.ErrorbarSettings>
+                </kanban:KanbanColumn>
+
+            </kanban:SfKanban.Columns>
+
+        </kanban:SfKanban>
+
+    </ContentPage.Content>
+
+</ContentPage>

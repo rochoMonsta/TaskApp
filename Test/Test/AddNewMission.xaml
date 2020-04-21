@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Test.AddNewMission"
+             Title="Додати завдання">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Ціль завдання" TextColor="Gray" FontSize="24" Margin="10"/>
+                <Entry x:Name="MissionEntry" Placeholder="" Margin="10, 0, 10, 10"/>
+                <Label Text="Детальна інформація" TextColor="Gray" FontSize="24" Margin="10, 0, 10, 10"/>
+                <Entry x:Name="DetailMissionEntry" Placeholder="" Margin="10, 0, 10, 10"/>
+                <Label Text="Колір завдання" TextColor="Gray" FontSize="24" Margin="10, 0, 10, 10"/>
+                <Picker x:Name="ColorPicker" Margin="10, 0, 10, 10">
+                    <Picker.Items>
+                        <x:String>Зелений</x:String>
+                        <x:String>Червоний</x:String>
+                        <x:String>Синій</x:String>
+                        <x:String>Жовтий</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Теги для завдання" TextColor="Gray" FontSize="24" Margin="10, 0, 10, 10"/>
+                <Entry x:Name="MissionTagsEntry" Placeholder="" Margin="10, 0, 10, 10"/>
+                <Button Text="Додати вправу" Clicked="Button_Clicked" HorizontalOptions="Center" BackgroundColor="#2c7cd1" TextColor="White"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
