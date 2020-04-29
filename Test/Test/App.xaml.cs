@@ -47,6 +47,21 @@ namespace Test
 
         protected override void OnResume()
         {
+            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            var path = Path.Combine(documentsPath, "ExercisesList.json");
+            if (File.Exists(path))
+            {
+                DBSaverLoader dBSaverLoader = new DBSaverLoader();
+                try
+                {
+                    ViewModel.CardsCopy = dBSaverLoader.LOAD_USER();
+                }
+                catch (Exception) { }
+            }
+            else
+            {
+                ViewModel.CardsCopy = new ObservableCollection<KanbanModel>();
+            }
         }
     }
 }
